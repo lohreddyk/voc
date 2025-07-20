@@ -1,26 +1,27 @@
-/* Reset and base */
+/* Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #2b2b52, #1e272e);
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2b2b52);
   color: #fff;
   padding: 40px 20px;
 }
 
-/* Container and Logo */
+/* Container */
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
+
+/* Logo */
 .logo {
-  width: 120px;
-  margin: 0 auto 20px;
-  display: block;
+  width: 140px;
+  margin-bottom: 20px;
 }
 
 /* Title */
@@ -28,7 +29,6 @@ body {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 40px;
-  color: #f5f6fa;
 }
 
 /* Cards Grid */
@@ -36,33 +36,35 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  justify-content: center;
-  padding: 0 20px;
+  justify-items: center;
 }
+
+/* Card */
 .card {
   background-color: #ffffff;
   color: #2f3640;
   padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
   max-width: 300px;
-  margin: 0 auto;
+  text-align: left;
+  transition: transform 0.3s ease;
 }
 .card:hover {
   transform: translateY(-8px);
 }
 .card h2 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 15px;
 }
 .card ul {
-  text-align: left;
+  list-style: none;
   margin-bottom: 20px;
 }
 .card ul li {
-  margin: 6px 0;
   font-size: 0.95rem;
+  margin-bottom: 8px;
 }
 
 /* Button */
@@ -71,10 +73,10 @@ body {
   background-color: #007bff;
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 16px;
   border-radius: 8px;
   font-size: 0.95rem;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease;
 }
 .btn:hover {
   background-color: #0056b3;
@@ -84,9 +86,5 @@ body {
 @media (max-width: 768px) {
   .title {
     font-size: 2rem;
-  }
-
-  .card {
-    max-width: 100%;
   }
 }
