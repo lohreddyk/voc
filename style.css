@@ -1,0 +1,78 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2b2b52, #1e272e);
+  color: #fff;
+  padding: 40px 20px;
+}
+
+/* Container and Logo */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.logo {
+  width: 120px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #f5f6fa;
+}
+
+/* Cards Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+.card {
+  background-color: #ffffff;
+  color: #2f3640;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.card ul {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.card ul li {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
